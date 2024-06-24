@@ -1,0 +1,51 @@
+.ooo{
+    width: 180px;
+    height: 55px;
+}
+.txt{
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}
+.txt span{
+    color: #BE1522;
+}
+.ground{
+    background-image: url('../assets/IMGS/ABOUTUS/Group 2.jpg');
+    width: 100%;
+    height: 70vh; 
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    z-index: 1; /* Make sure the ground is below the doctors */
+}
+.DOCTORS{
+    width: 380px;
+    height: 350px;
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    z-index: 2; /* Make sure the doctors image is above the ground */
+}
+.something{
+    width: 300px;
+    height: 280px;
+    z-index: 1; /* Ensure it stays below the doctors image */
+}
+.read-more-button{
+    background: linear-gradient(90deg, #BE1522 0%, #161616 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+  font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    bottom: 55px; /* Adjust as necessary */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1; /* Ensure it stays below the doctors image */
+}

@@ -1,0 +1,132 @@
+/* ourvision.css */
+* {
+    box-sizing: border-box; /* تأكد إن كل العناصر بتحترم حدود الكونتينر */
+}
+
+body {
+    margin: 0; /* إزالة أي مارجن افتراضي للجسم */
+    overflow-x: hidden; /* منع الـ Overflow الأفقي للصفحة كلها */
+}
+
+.VISion {
+    margin-top: 90px;
+    overflow-x: hidden; /* منع الـ Overflow الأفقي للكونتينر */
+    max-width: 100%; /* تأكد من إن الكونتينر مش بيعدي عرض الصفحة */
+}
+
+.More {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, #BE1522 0%, #161616 100%);
+    width: 160px;
+    padding: 6px;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+}
+
+#leftCorner {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px; /* خلي المارجن هنا */
+}
+
+#imgup {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
+    z-index: 1;
+}
+
+#imgdown {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 70px;
+    left: -30px;
+    z-index: 2;
+}
+
+.leftCorner .div {
+    display: flex;
+}
+
+.rightreturn {
+    margin-top: 30px;
+}
+
+#lineunder {
+    width: 100%; /* خلي الخط ميعديش عرض الكونتينر */
+    height: 10%;
+    margin-top: 30px;
+}
+
+.Aligning {
+    width: 100%; /* تأكد إن العرض ميعديش الكونتينر */
+}
+
+.aiming {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#lineee {
+    position: absolute;
+    z-index: 6;
+}
+
+.imgdown {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .flexvision {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+
+    .col-sm-7 {
+        order: 1; /* خلي العمود اللي فيه الصورة يظهر الأول */
+    }
+
+    .col-sm-5 {
+        order: 2; /* خلي العمود اللي فيه النص يظهر بعد الصورة */
+    }
+
+    #leftCorner {
+        order: 1; /* خلي العمود اللي فيه الصورة يظهر الأول */
+    }
+
+    .rightreturn {
+        order: 2; /* خلي العمود اللي فيه النص يظهر بعد الصورة */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    #TITLE{
+      display: block;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* وسائل الإعلام للشاشات الصغيرة */
+@media (max-width: 768px) {
+    #TITLE {
+        text-align: center;
+    }
+
+    .rightreturn {
+        text-align: center;
+    }
+}

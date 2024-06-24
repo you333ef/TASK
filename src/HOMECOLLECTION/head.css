@@ -1,0 +1,106 @@
+.right {
+    background-image: url('../assets/IMGS/Head&Nav/Ellipse%201.jpg');
+    background-size: cover; 
+    height: 87vh; 
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HH {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto; /* تعديلات هنا */
+}
+
+.DRUGS, .Doctor {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.DRUGS {
+    margin-left: 200px;
+    /* background-image: url('../assets/IMGS/Head&Nav/Rectangle 10.svg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;  */
+  margin-top: 50px;
+    width: 330px;
+    height: 270px;
+    border-radius: 50px;
+}
+
+
+.Doctor {
+  margin-right: 220px;
+  /* background-image: url('../assets/IMGS/Head&Nav/Vector\ 4.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;  */
+  width: 300px;
+  height: 250px;
+  border-radius: 50px;
+ margin-bottom: 50px;
+
+}
+
+.Focus {
+    color: #BE1522;
+   
+}
+
+.bag {
+    color: #BE1522;
+}
+
+.HCPs {
+    color: #BE1522;
+}
+
+.textHead {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+#KHAT{
+   
+   
+  
+}
+
+.Read {
+    background: linear-gradient(90deg, #BE1522 0%, #161616 100%);
+    border: none;
+    padding: 10px;
+    width: 120px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.roow {
+    overflow: hidden;
+}
+
+.left {
+    padding: 120px 40px 40px 40px; /* تعديلات هنا */
+    overflow: hidden;
+    margin-top: 5px;
+}
+.one{
+    margin-left: 90px;
+    margin-top: 15px;
+}
+#MESH{
+    margin-top: 300px;
+    color: #161616;
+    background-color: #161616;
+}
+.tto{
+  
+
+}
