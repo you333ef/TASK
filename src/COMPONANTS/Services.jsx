@@ -9,7 +9,7 @@ import shipped from '../assets/IMGS/OURSERVICES/shipped.svg';
 import line from '../assets/IMGS/OURSERVICES/Line 1.png';
 const Services = () => {
   return (
-    <div className="container coco">
+    <div className="container coco" id='coco'>
       <img src={adress} alt=""  className='d-block mx-auto mt-5 ' id='adress'/>
       <img src={UnderTopLine} alt="" className='d-block mx-auto mt-3 'id='UnderTopLine' />
 <div className="row mt-5 COLLOW">

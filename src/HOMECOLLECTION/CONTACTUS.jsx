@@ -2,13 +2,15 @@ import React from 'react';
 import './contactUUS.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MAP from '../assets/IMGS/MISSION/MAP.svg';
+import CoNtACt from '../assets/IMGS/VALUES/CoNtACt.svg'
 
 const CONTACTUS = () => {
   return (
     <div>
-      <div className="container CONCER">
-<div className="row">
-  <div className="col-lg-6 col-sm-12">
+      <div className=" CONCER">
+        <img src={CoNtACt} alt="" className='d-block m-auto  mb-5' />
+<div className="row  KOLLOCONTACCT mt-5">
+  <div className="col-lg-6 col-sm-12" id='LABLES'>
   <form className=''>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
@@ -28,10 +30,9 @@ const CONTACTUS = () => {
         </div>
       </form>
   </div>
-  <div className="col-lg-6 col-sm-12" id='leftMission'>    
-    
-    <img src={MAP} alt="" id='MAP' />
-   
+  <div className="col-lg-5 col-sm-12" id='leftContact'>   
+     
+    <img src={MAP} alt="" id='MAPP' />
   </div>
 
 

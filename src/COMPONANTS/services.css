@@ -1,5 +1,6 @@
 .coco{
     overflow: hidden;
+    padding: 70px;
     
 }
 #adress{
@@ -10,6 +11,7 @@ font-weight: 400;
     background: linear-gradient(90deg, rgba(190, 21, 34, 0.1) 0%, rgba(22, 22, 22, 0.1) 100%);
     padding: 15px;
     border-radius: 15px;
+ margin-bottom: -1px;
 
 
 }
@@ -31,7 +33,9 @@ font-weight: 400;
         border-bottom: 2px solid rgba(120, 12, 21); 
         padding: 10px;
         margin-top: 20px;
+        
     }
+   
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #carone,  #cartwo,#hands,#shipped{
@@ -41,7 +45,9 @@ font-weight: 400;
         border-right: 2px solid rgba(120, 12, 21,0.5); 
         padding: 10px;
         margin-top: 20px;
+        width: 100%;
     }
+   
 
 
 

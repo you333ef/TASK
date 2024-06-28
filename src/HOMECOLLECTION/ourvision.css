@@ -1,4 +1,3 @@
-/* ourvision.css */
 * {
     box-sizing: border-box; /* تأكد إن كل العناصر بتحترم حدود الكونتينر */
 }
@@ -9,9 +8,10 @@ body {
 }
 
 .VISion {
-    margin-top: 90px;
+    margin-top: 10px;
     overflow-x: hidden; /* منع الـ Overflow الأفقي للكونتينر */
     max-width: 100%; /* تأكد من إن الكونتينر مش بيعدي عرض الصفحة */
+    align-items: center;
 }
 
 .More {
@@ -27,9 +27,15 @@ body {
 #leftCorner {
     overflow: hidden;
     position: relative;
-    margin-bottom: 100px; /* خلي المارجن هنا */
+   
+ 
 }
-
+#TITLE{
+    margin-top: 180px;
+}
+.rightreturn {
+    margin-top: 50px;
+  }
 #imgup {
     width: 300px;
     height: 300px;
@@ -52,9 +58,7 @@ body {
     display: flex;
 }
 
-.rightreturn {
-    margin-top: 30px;
-}
+
 
 #lineunder {
     width: 100%; /* خلي الخط ميعديش عرض الكونتينر */
@@ -88,7 +92,7 @@ body {
     }
 
     .col-sm-7 {
-        order: 1; /* خلي العمود اللي فيه الصورة يظهر الأول */
+        order: 1;
     }
 
     .col-sm-5 {
@@ -114,12 +118,40 @@ body {
         margin-right: auto;
     }
 }
-.center-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
+
+@media (max-width: 600px) {
+    .flexvision {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #leftCorner {
+        order: 1; /* خلي العمود اللي فيه الصورة يظهر الأول */
+    }
+
+    .rightreturn {
+        order: 2; /* خلي العمود اللي فيه النص يظهر بعد الصورة */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #TITLE {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .center-img {
+        order: 3; /* خلي الصورة تظهر بعد النص */
+        margin-top: 10px; /* ضيف مسافة صغيرة فوق الصورة */
+    }
+}
 /* وسائل الإعلام للشاشات الصغيرة */
 @media (max-width: 768px) {
     #TITLE {
@@ -129,4 +161,85 @@ body {
     .rightreturn {
         text-align: center;
     }
+    .row{
+        display: flex;
+        flex-direction: column-reverse; /* جعل العناصر تظهر بالعكس */
+    }
+    #leftCorner {
+        order: 1; /* خلي العمود اللي فيه الصورة يظهر الأول */
+     
+    }
+    #TITLE {
+        order: 2; /* خلي العمود اللي فيه النص يظهر بعد الصورة */
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rightreturn {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+   
+    #leftCorner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    #TITLE {
+        text-align: center;
+    }
+
+    .rightreturn {
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column-reverse; /* جعل العناصر تظهر بالعكس */
+    }
+    #leftCorner {
+        order: 1; /* خلي العمود اللي فيه الصورة يظهر الأول */
+    }
+    #TITLE {
+        order: 2; /* خلي العمود اللي فيه النص يظهر بعد الصورة */
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rightreturn {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .VISion{
+
+        transform: translateY(-100px); 
+    }
+    #leftCorner{
+        display: flex;
+        justify-content: center;
+    }
+    .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+  }

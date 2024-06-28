@@ -1,18 +1,46 @@
-.right {
-    background-image: url('../assets/IMGS/Head&Nav/Ellipse%201.jpg');
-    background-size: cover; 
-    height: 87vh; 
-    width: 60%;
-    flex-direction: column;
+/* .right {
+    background-image: url('../assets/IMGS/Head&Nav/Ellipse1.svg');
+    background-size: 97%; 
+    background-repeat: no-repeat;
+    height: 94vh; 
+    width: 57%; 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0; 
+    margin: 0; 
+} */
+
+.row {
+    display: flex;
+    overflow: hidden;
+    margin: 0; /* لضمان عدم وجود مسافات */
+    padding: 0; /* لضمان عدم وجود مسافات */
 }
+
+.right {
+    background-image: url('../assets/IMGS/Head&Nav/Ellipse1.svg');
+    background-size: cover; /* استخدم cover بدلاً من النسبة المئوية */
+    background-repeat: no-repeat;
+    height: 94vh;
+    flex: 1; /* استخدم flex: 1 عشان تاخد المساحة الباقية بشكل تلقائي */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+ margin-left: 0px;
+    box-sizing: border-box; /* عشان العرض يشمل المارجن والبادنج */
+}
+
+
 
 .HH {
     width: 100%;
     overflow: hidden;
-    margin: 0 auto; /* تعديلات هنا */
+    margin: 0 auto;
+    margin-top: 0px;
 }
 
 .DRUGS, .Doctor {
@@ -24,33 +52,22 @@
 
 .DRUGS {
     margin-left: 200px;
-    /* background-image: url('../assets/IMGS/Head&Nav/Rectangle 10.svg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;  */
-  margin-top: 50px;
+    margin-top: 50px;
     width: 330px;
     height: 270px;
     border-radius: 50px;
 }
 
-
 .Doctor {
-  margin-right: 220px;
-  /* background-image: url('../assets/IMGS/Head&Nav/Vector\ 4.svg');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;  */
-  width: 300px;
-  height: 250px;
-  border-radius: 50px;
- margin-bottom: 50px;
-
+    margin-right: 220px;
+    width: 300px;
+    height: 250px;
+    border-radius: 50px;
+    margin-bottom: 50px;
 }
 
 .Focus {
     color: #BE1522;
-   
 }
 
 .bag {
@@ -65,11 +82,6 @@
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 0;
-}
-#KHAT{
-   
-   
-  
 }
 
 .Read {
@@ -87,20 +99,141 @@
 }
 
 .left {
-    padding: 120px 40px 40px 40px; /* تعديلات هنا */
+    padding: 120px 40px 40px 40px;
     overflow: hidden;
     margin-top: 5px;
 }
-.one{
+
+.one {
     margin-left: 90px;
     margin-top: 15px;
 }
-#MESH{
-    margin-top: 300px;
-    color: #161616;
-    background-color: #161616;
-}
-.tto{
-  
 
+@media (max-width: 768px) {
+    .right {
+       background-image: none;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+
+    .left {
+        padding: 5px;
+    }
+
+    .DRUGS, .Doctor {
+        width: 50%;
+        height: 80%;
+        margin: 5px;
+        border-radius: 10px;
+    } 
+
+    .left {
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .DRUGS {
+        margin-top: 0;
+        border-radius: 50px;
+    }
+
+    .Doctor {
+        margin-right: 0;
+        border-radius: 50px;
+        margin-bottom: 0;
+    }
+
+    .roow {
+        margin-bottom: 200px;
+    }
+
+    .left {
+        padding: 10px 10px 10px 10px;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+
+    .left {
+        padding: 20px 40px 40px 40px;
+    }
+    .HH{
+        margin-top: 90px;
+    }
+  
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .right {
+        background-image: none;
+    }
+ 
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .left {
+        padding: 5px;
+    }
+
+    .DRUGS, .Doctor {
+        width: 50%;
+        height: 80%;
+        margin: 5px;
+        border-radius: 10px;
+    } 
+
+    .left {
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .DRUGS {
+        margin-top: 0;
+        border-radius: 50px;
+    }
+
+    .Doctor {
+        margin-right: 0;
+        border-radius: 50px;
+        margin-bottom: 0;
+    }
+
+    .roow {
+        margin-bottom: 200px;
+    }
+
+    .left {
+        padding: 10px 10px 10px 10px;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+
+    .left {
+        padding: 20px 40px 40px 40px;
+    }
+  
 }

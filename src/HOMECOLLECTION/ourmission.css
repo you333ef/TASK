@@ -1,91 +1,190 @@
 /* ourmission.css */
 #leftMission {
   background-image: url('../assets/IMGS/MISSION/Ellipsee.svg');
-  background: linear-gradient(270deg, #BE1522 0%, #161616 100%);
-  width: 50%;  /* 50% من العرض */
-  height: 28vw;  /* يتناسب مع العرض */
-  top: 20px;
-  left: -230px;
-  gap: 0px;
+  width: 45%;
+  height: 110vh;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  margin-top: 50px;
   opacity: 0px;
   border-radius: 30px;
-  z-index: 5;
 }
 
-  .LOL{
-    margin-top: 40px;
+#MAP {
+  width: 75%;
+  height: 95%;
+  margin-left: 105px;
+  border-radius: 20px;
+  margin-top: -190px;
+  cursor: pointer;
+}
+
+.LOL {
+  margin-top: 100px;
+}
+
+.ROOF {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Media query for mobile and tablet screens */
+@media (max-width: 768px) {
+  .LOL {
+    padding: 50px;
+    margin-top: 120px;
   }
+
+  #leftMission {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    order: 1; /* Add this */
+  }
+
   #MAP {
-    width: 70%;
-    height: 300px;
-    margin-left: 220px;
+    width: 50%;
+    height: auto;
+    margin: 0%;
+    margin-bottom: 150px;
     border-radius: 20px;
-    margin-top: -44px;
     cursor: pointer;
   }
-  
-  /* Media query for mobile and tablet screens */
-  @media (max-width: 768px) {
-    .LOL {
-      padding: 0;
-      margin-top: 20px;
-    }
-  
-    #leftMission {
-      background-size: cover;
-      background-position: center;
-      width: 95%;
-      height: 40vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      left: 0;
-      top: 0;
-      border-radius: 0;
-    }
-  
-    #MAP {
-      width: 96%;
-      height: auto;
-     margin: 0%;
-     margin-bottom: 150px;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-  
-    .rightMission {
-      display: none;
-      width: 100%;
-     
-    }
-  }
-  #FRAME{
-width: 200px;
-height: 180px;
-margin-top: -50px;
-  }
-  #access{
-padding: 10px;
-margin-top: -50px;
 
-
-
-  }
-  #small{
-padding: 10px;
-color: black;
-letter-spacing: 1px;
-
-
-  }
-  .focus{
-    color: #BE1522;
-  }
-  #access{
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-  #Vactor{
+  .rightMission {
     width: 100%;
+    order: 2; /* Add this */
   }
+
+  .ROOF {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+ 
+  .HOPPAA{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #leftMission {
+   width: 100%;
+   height: 40vh;
+   border: 20px;
+
+  }
+  #MAP {
+    width: 100%;
+  height: 90%;
+margin: auto;
+margin-top: -50px;
+  }
+}
+
+#FRAME {
+  width: 200px;
+  height: 180px;
+  margin-top: -50px;
+ 
+}
+
+#access {
+  margin-top: -50px;
+}
+
+#small {
+  padding: 10px;
+  color: black;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.focus {
+  color: #BE1522;
+}
+
+#access {
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+#Vactor {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+ .LOL {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  #leftMission {
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    order: 1; /* Add this */
+  }
+
+  #MAP {
+    width: 96%;
+    height: auto;
+    margin: 0%;
+    margin-bottom: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .rightMission {
+    width: 100%;
+    order: 2; /* Add this */
+  }
+
+  .ROOF {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .ROOF{
+    transform: translateY(-250px); 
   
+  }
+  .HOPPAA{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #leftMission {
+   width: 100%;
+   height: 40vh;
+   border: 20px;
+
+  }
+  #MAP {
+    width: 100%;
+  height: 90%;
+margin: auto;
+margin-top: -50px;
+  }
+
+
+
+
+}
+

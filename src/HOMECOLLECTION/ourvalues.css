@@ -1,6 +1,48 @@
-#FRAME500{
-    width: 60%;
-}
-.FIVTEEN{
-    margin-top: 100px;
-}
+.KOLELTATATA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #KAWKAP, #BOX, #LAMP {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  
+  .kawkab-img {
+    height: 260px; /* Adjust height here */
+    width: 260px; /* Adjust width here */
+    border-radius: 50px;
+  }
+  .box-img, .lamp-img {
+    height: 230px; /* Original height */
+    width: 230px; /* Original width */
+    border-radius: 50px;
+  }
+  
+ .OURVALUES{
+  margin-top: 90px;
+  padding: 15px;
+ }
+
+  
+  .TYiTLE {
+    margin-bottom: 70px;
+  }
+  
+  @media (max-width: 768px) {
+    .kawkab-img {
+      height: 270px; /* Adjust height here */
+      width: 270px; /* Adjust width here */
+      border-radius: 50px;
+      background-size: cover;
+    }
+  
+    .box-img, .lamp-img {
+      height: 250px; /* Original height */
+      width: 250px; /* Original width */
+      border-radius: 50px;
+    }
+  }
+  

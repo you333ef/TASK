@@ -2,6 +2,7 @@
     width: 180px;
     height: 55px;
 }
+
 .txt{
     font-size: 24px;
     font-weight: 600;
@@ -10,7 +11,7 @@
 .txt span{
     color: #BE1522;
 }
-.ground{
+.ground {
     background-image: url('../assets/IMGS/ABOUTUS/Group 2.jpg');
     width: 100%;
     height: 70vh; 
@@ -20,32 +21,118 @@
     align-items: center; /* Center vertically */
     position: relative;
     z-index: 1; /* Make sure the ground is below the doctors */
-}
-.DOCTORS{
+  }
+  
+  .DOCTORS {
     width: 380px;
     height: 350px;
-    position: absolute;
-    top: 700px;
-    left: 50px;
     z-index: 2; /* Make sure the doctors image is above the ground */
-}
-.something{
+    position: absolute;
+    left: 0; /* Position it to the left */
+    margin-left: 20px; /* Adjust as necessary */
+   margin-bottom: 140px;
+  }
+  
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure it stays below the doctors image */
+  }
+  
+  .something {
     width: 300px;
     height: 280px;
     z-index: 1; /* Ensure it stays below the doctors image */
-}
-.read-more-button{
+  }
+  
+  .read-more-button {
     background: linear-gradient(90deg, #BE1522 0%, #161616 100%);
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
-  font-weight: 500;
+    font-weight: 500;
     cursor: pointer;
-    position: absolute;
-    bottom: 55px; /* Adjust as necessary */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    margin-top: 5px;
+    margin-bottom: 25px;
     z-index: 1; /* Ensure it stays below the doctors image */
-}
+  }
+  
+@media (max-width: 768px) {
+   
+   .read-more-button{
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+
+   }
+   .ground{
+    position: relative;
+   }
+   .DOCTORS{
+display: inline-block;
+width: 300px;
+height: 290px;
+position: absolute;
+top: 10px;
+margin-left: auto;
+margin-right: auto;
+left: 100px;
+
+
+   }
+   .read-more-button {
+    background: linear-gradient(90deg, #BE1522 0%, #161616 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+margin-left: -70px;
+    margin-bottom: 25px;
+    z-index: 1; /* Ensure it stays below the doctors image */
+  }
+  .about-us-container{
+    margin-top: 140px;
+  }
+  .ooo,.txt{
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+   
+
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .about-us-container{
+        transform: translateY(-300px); 
+    
+       }
+       .read-more-button{
+        position: absolute;
+        bottom: 180px;
+        left: 50%;
+    
+       }
+       .ground{
+        position: relative;
+       }
+       .DOCTORS{
+    display: inline-block;
+    width: 300px;
+    height: 290px;
+    position: absolute;
+    top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 100px;
+    
+    
+       }
+       
+  }
+

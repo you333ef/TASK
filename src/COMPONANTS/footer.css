@@ -1,12 +1,19 @@
 .footer {
-    background: linear-gradient(270deg, #BE1522 0%, #161616 100%);
+   background-image: url('../assets/IMGS/Footer/FOOWTER.svg');
+   background-size: cover;
+   height: 100vh;
     color: #fff;
-    padding: 100px 100px;
+    padding-bottom: 0;
+    overflow: hidden;
+     margin-bottom: 0;
+      margin-top: auto;
     margin-top: 800px;
     border-top-left-radius: 50px; /* تقليل المسافة العلوية من الناحية اليسرى */
     border-top-right-radius: 50px; /* تقليل المسافة العلوية من الناحية اليمنى */
   }
-  
+  .FGR{
+    margin-top: 70px;
+  }
   .footer .footer-logo {
     width: 150px;
     margin-bottom: 20px;
@@ -32,11 +39,47 @@
   .footer ul li a {
     color: #fff;
     text-decoration: none;
+   
   }
   
   @media (max-width: 768px) {
     .footer .container {
       text-align: center;
     }
+    .footer {
+    background:  linear-gradient(90deg, #BE1522 0%, #161616 100%);
+      background-size: cover;
+      height: 80vh;
+       color: #fff;
+     
+       margin-top: 800px;
+       border-top-left-radius: 50px; /* تقليل المسافة العلوية من الناحية اليسرى */
+       border-top-right-radius: 50px; /* تقليل المسافة العلوية من الناحية اليمنى */
+     }
+     
+
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .footer .container {
+      text-align: center;
+      justify-content: center;
+     flex-direction: column;
+    }
+    .footer {
+    background:  linear-gradient(90deg, #BE1522 0%, #161616 100%);
+      background-size: cover;
+      height: 80vh;
+       color: #fff;
+     text-align: center;
+     
+     display: flex;
+       margin-top: 800px;
+       border-top-left-radius: 50px; /* تقليل المسافة العلوية من الناحية اليسرى */
+       border-top-right-radius: 50px; /* تقليل المسافة العلوية من الناحية اليمنى */
+     }
+
+     
+
+
   }
   

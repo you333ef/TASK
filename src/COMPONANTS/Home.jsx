@@ -10,6 +10,7 @@ import CONTACTUS from '../HOMECOLLECTION/CONTACTUS';
 const Home = () => {
   return (
     <div>
+       
       <HEAD/>
       <ABBOUTUS/>
       <Services/>
