@@ -5,7 +5,8 @@ import { FaSearch } from "react-icons/fa";
 import LOGOWWWW from '../assets/IMGS/Head&Nav/LOGOOO.svg';
 import { Navbar, Nav as BootstrapNav, Container } from 'react-bootstrap';
 
-const CustomNav = () => {
+const Nav = () => { 
+  console.log("Nav component loaded"); // للتأكد من تحميل الملف
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -24,7 +25,7 @@ const CustomNav = () => {
             <BootstrapNav.Link href="/" onClick={() => setExpanded(false)}>Home</BootstrapNav.Link>
             <BootstrapNav.Link href="/about" onClick={() => setExpanded(false)}>About Us</BootstrapNav.Link>
             <BootstrapNav.Link href="/services" onClick={() => setExpanded(false)}>Services</BootstrapNav.Link>
-            <BootstrapNav.Link href="/Contact" onClick={() => setExpanded(false)}>Contact Us</BootstrapNav.Link>
+            <BootstrapNav.Link href="/contact" onClick={() => setExpanded(false)}>Contact Us</BootstrapNav.Link>
           </BootstrapNav>
           <div className="search-icon">
             <FaSearch className='FaSearch' />
@@ -35,4 +36,4 @@ const CustomNav = () => {
   );
 }
 
-export default CustomNav;
+export default Nav;
