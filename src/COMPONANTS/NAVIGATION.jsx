@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './nav.css';
+import './navigation.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaSearch } from "react-icons/fa";
 import LOGOWWWW from '../assets/IMGS/Head&Nav/LOGOOO.svg';
 import { Navbar, Nav as BootstrapNav, Container } from 'react-bootstrap';
 
-const Nav = () => { 
+const NAVIGATION = () => { 
   console.log("Nav component loaded"); // للتأكد من تحميل الملف
   const [expanded, setExpanded] = useState(false);
 
@@ -36,4 +36,4 @@ const Nav = () => {
   );
 }
 
-export default Nav;
+export default NAVIGATION;

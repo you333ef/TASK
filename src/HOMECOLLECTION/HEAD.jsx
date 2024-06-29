@@ -11,7 +11,7 @@ const HEAD = () => {
   return (
     <div className="HH ">  
       <div className="row">
-        <div className="left col-lg-5 col-sm-12">
+        <div className="left col-lg-5 col-sm-12" id='left'>
           <h4 className='one'> <img src={bag} alt="" /> saudi antiserum company</h4>
           <h2 className='textHead one tto'>We <span className='Focus'>Focus</span> On improving</h2>
           <h2 className='textHead one tto'>access to medicines for both</h2>

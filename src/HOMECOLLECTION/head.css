@@ -94,10 +94,6 @@
     border-radius: 5px;
 }
 
-.roow {
-    overflow: hidden;
-}
-
 .left {
     padding: 120px 40px 40px 40px;
     overflow: hidden;
@@ -122,6 +118,9 @@
       display: flex;
       flex-direction: row;
       position: relative;
+    height: 530px;
+    text-align: center;
+    justify-content: center;
     }
 
     .left {
@@ -168,9 +167,13 @@
 
     .left {
         padding: 20px 40px 40px 40px;
+   
     }
     .HH{
-        margin-top: 90px;
+        margin-top: -40px;
+    }
+    #left{
+        margin-bottom: 75px;
     }
   
 }

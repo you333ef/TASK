@@ -6,11 +6,12 @@ import About from './COMPONANTS/About';
 import Services from './COMPONANTS/Services';
 import Contact from './COMPONANTS/Contact';
 import Footer from './COMPONANTS/Footer';
+import NAVIGATION from './COMPONANTS/NAVIGATION';
 
 const App = () => {
   return (
     <>
-     
+     <NAVIGATION/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
